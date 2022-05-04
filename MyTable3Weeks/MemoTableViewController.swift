@@ -9,29 +9,93 @@ import UIKit
 
 class MemoTableViewController: UITableViewController {
     
-    var list: [String] = ["장 보기", "메모", "영화 보러가기", "WWDC 시청"] {
+    var list: [Memo] = [] {
         didSet {
-            tableView.reloadData()
+            //tableView.reloadData()
+            saveData()
         }
     }
-
+    
+    
+    @IBOutlet weak var categorySegmentedControl: UISegmentedControl!
     @IBOutlet weak var memoTextView: UITextView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "xmark"), style: .plain, target: self, action: #selector(closeButtonClicked))
+        
+        loadData()
+        //UITableView.automaticDimension
+    }
+    
+    
+    @objc func closeButtonClicked() {
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func saveBtnClicked(_ sender: UIButton) {
         //배열에 텍스트뷰의 텍스트 값 추가
         if let text = memoTextView.text {
-            list.append(text)
+            
+            let segmentIndex = categorySegmentedControl.selectedSegmentIndex // 0, 1, 2
+            
+            let segmentCategory = MemoCategory(rawValue: segmentIndex) ?? .others
+            
+            let memo = Memo(content: text, category: segmentCategory)
+            
+            list.append(memo)
             //tableView.reloadData()
             print(list)
         } else {
             print("")
         }
+    }
+    
+    func loadData() {
+        let userDefaults = UserDefaults.standard
+        
+        if let data = userDefaults.object(forKey: "memoList") as? [[String:Any]] {
+            
+            var memo = [Memo]()
+            
+            for datum in data {
+                guard let category = datum["category"] as? Int else { return }
+                guard let content = datum["content"] as? String else { return }
+                
+                
+                let enumCategory = MemoCategory(rawValue: category) ?? .others
+                
+                memo.append(Memo(content: content, category: enumCategory))
+            }
+            
+            self.list = memo
+            
+        }
+            
+    }
+    
+    func saveData() {
+        var memo: [[String:Any]] = []
+        
+        for i in list {
+            let data: [String:Any] = [
+                "category": i.category.rawValue,
+                "content": i.content
+            ]
+            
+            memo.append(data)
+        }
+        
+        let userDefaults = UserDefaults.standard
+        userDefaults.set(memo, forKey: "memoList")
+        
+        tableView.reloadData()
+//        [
+//            ["content": "asdasdsa", "category": 8],
+//            ["content": "asdasdsa", "category": 8]
+//        ]
     }
     
     // 옵션: 섹션의 수 : NunumberOfSections (default는 1)
@@ -68,10 +132,24 @@ class MemoTableViewController: UITableViewController {
             cell.textLabel?.text = "첫번째 섹션입니다. - \(indexPath)"
             cell.textLabel?.textColor = .brown
             cell.textLabel?.font = .boldSystemFont(ofSize: 15)
+            cell.imageView?.image = nil
+            cell.detailTextLabel?.text = nil
         } else {
-            cell.textLabel?.text = list[indexPath.row]
+            
+            let memo = list[indexPath.row]
+            
+            switch memo.category {
+            case .business : cell.imageView?.image = UIImage(systemName: "building.2")
+            case .personal : cell.imageView?.image = UIImage(systemName: "person")
+            case .others : cell.imageView?.image = UIImage(systemName: "square.and.pencil")
+            }
+            
+            cell.textLabel?.text = memo.content
+            cell.detailTextLabel?.text = memo.category.description
             cell.textLabel?.textColor = .blue
             cell.textLabel?.font = .boldSystemFont(ofSize: 12)
+            
+            cell.imageView?.tintColor = .red
         }
         
         return cell
@@ -85,9 +163,9 @@ class MemoTableViewController: UITableViewController {
     //3. (옵션)셀의 높이 : heightForRowAt 디폴트는 44
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     
-        //return indexPath.section == 0 ? 44 : 80
-        
-        return indexPath.row == 0 ? 44 : 88
+            
+        //return indexPath.row == 0 ? 44 : 88
+        return UITableView.automaticDimension
     }
 
     

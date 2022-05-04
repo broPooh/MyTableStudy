@@ -1,5 +1,5 @@
 //
-//  BoxOfficeTableViewCell.swift
+//  PurchaseTableViewCell.swift
 //  MyTable3Weeks
 //
 //  Created by bro on 2022/05/03.
@@ -7,15 +7,11 @@
 
 import UIKit
 
-class BoxOfficeTableViewCell: UITableViewCell {
-    
-    static let identifier = "BoxOfficeTableViewCell"
+class PurchaseTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var posterImageView: UIImageView!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var releaseDateLabel: UILabel!
-    @IBOutlet weak var overviewLabel: UILabel!
+    @IBOutlet weak var shoppingTextField: UITextField!
     
+    @IBOutlet weak var purchaseBtn: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()

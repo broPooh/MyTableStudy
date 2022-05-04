@@ -9,6 +9,19 @@
 /* Begin PBXBuildFile section */
 		1B5FFE3D2820968000EC5AD7 /* BoxOfficeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5FFE3C2820968000EC5AD7 /* BoxOfficeTableViewCell.swift */; };
 		1B5FFE3F2820969400EC5AD7 /* BoxOfficeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5FFE3E2820969400EC5AD7 /* BoxOfficeTableViewController.swift */; };
+		1B5FFE432820B87900EC5AD7 /* ShoppingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5FFE422820B87900EC5AD7 /* ShoppingTableViewController.swift */; };
+		1B5FFE452820B8B400EC5AD7 /* ShoppingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5FFE442820B8B400EC5AD7 /* ShoppingTableViewCell.swift */; };
+		1B5FFE472820C02200EC5AD7 /* PurchaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5FFE462820C02200EC5AD7 /* PurchaseTableViewCell.swift */; };
+		1B5FFE4928213ECE00EC5AD7 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5FFE4828213ECE00EC5AD7 /* Movie.swift */; };
+		1B5FFE4B28213F7F00EC5AD7 /* MovieInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5FFE4A28213F7F00EC5AD7 /* MovieInformation.swift */; };
+		1B5FFE4D2821438500EC5AD7 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5FFE4C2821438500EC5AD7 /* Memo.swift */; };
+		1B5FFE4F2821ECAC00EC5AD7 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5FFE4E2821ECAC00EC5AD7 /* UIViewController+Extension.swift */; };
+		1B5FFE512821EFA800EC5AD7 /* ShoppingMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5FFE502821EFA800EC5AD7 /* ShoppingMemo.swift */; };
+		1B5FFE5528220ADB00EC5AD7 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5FFE5428220ADB00EC5AD7 /* TestViewController.swift */; };
+		1B5FFE5728220B0500EC5AD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5FFE5628220B0500EC5AD7 /* ViewController.swift */; };
+		1B5FFE59282211A900EC5AD7 /* Movie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B5FFE58282211A900EC5AD7 /* Movie.storyboard */; };
+		1B5FFE5B2822128000EC5AD7 /* BoxOfficeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5FFE5A2822128000EC5AD7 /* BoxOfficeDetailViewController.swift */; };
+		1B5FFE5D282216BA00EC5AD7 /* BoxOfficeCastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5FFE5C282216BA00EC5AD7 /* BoxOfficeCastViewController.swift */; };
 		1BD1587A281FB97900DD05CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD15879281FB97900DD05CB /* AppDelegate.swift */; };
 		1BD1587C281FB97900DD05CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1587B281FB97900DD05CB /* SceneDelegate.swift */; };
 		1BD15881281FB97900DD05CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BD1587F281FB97900DD05CB /* Main.storyboard */; };
@@ -21,6 +34,19 @@
 /* Begin PBXFileReference section */
 		1B5FFE3C2820968000EC5AD7 /* BoxOfficeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxOfficeTableViewCell.swift; sourceTree = "<group>"; };
 		1B5FFE3E2820969400EC5AD7 /* BoxOfficeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxOfficeTableViewController.swift; sourceTree = "<group>"; };
+		1B5FFE422820B87900EC5AD7 /* ShoppingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewController.swift; sourceTree = "<group>"; };
+		1B5FFE442820B8B400EC5AD7 /* ShoppingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewCell.swift; sourceTree = "<group>"; };
+		1B5FFE462820C02200EC5AD7 /* PurchaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseTableViewCell.swift; sourceTree = "<group>"; };
+		1B5FFE4828213ECE00EC5AD7 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		1B5FFE4A28213F7F00EC5AD7 /* MovieInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInformation.swift; sourceTree = "<group>"; };
+		1B5FFE4C2821438500EC5AD7 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		1B5FFE4E2821ECAC00EC5AD7 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		1B5FFE502821EFA800EC5AD7 /* ShoppingMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingMemo.swift; sourceTree = "<group>"; };
+		1B5FFE5428220ADB00EC5AD7 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		1B5FFE5628220B0500EC5AD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1B5FFE58282211A900EC5AD7 /* Movie.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Movie.storyboard; sourceTree = "<group>"; };
+		1B5FFE5A2822128000EC5AD7 /* BoxOfficeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxOfficeDetailViewController.swift; sourceTree = "<group>"; };
+		1B5FFE5C282216BA00EC5AD7 /* BoxOfficeCastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxOfficeCastViewController.swift; sourceTree = "<group>"; };
 		1BD15876281FB97900DD05CB /* MyTable3Weeks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTable3Weeks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BD15879281FB97900DD05CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BD1587B281FB97900DD05CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,13 +91,26 @@
 				1BD15879281FB97900DD05CB /* AppDelegate.swift */,
 				1BD1587B281FB97900DD05CB /* SceneDelegate.swift */,
 				1BD1587F281FB97900DD05CB /* Main.storyboard */,
+				1B5FFE4E2821ECAC00EC5AD7 /* UIViewController+Extension.swift */,
+				1B5FFE462820C02200EC5AD7 /* PurchaseTableViewCell.swift */,
+				1B5FFE442820B8B400EC5AD7 /* ShoppingTableViewCell.swift */,
+				1B5FFE422820B87900EC5AD7 /* ShoppingTableViewController.swift */,
 				1B5FFE3E2820969400EC5AD7 /* BoxOfficeTableViewController.swift */,
+				1B5FFE4A28213F7F00EC5AD7 /* MovieInformation.swift */,
 				1B5FFE3C2820968000EC5AD7 /* BoxOfficeTableViewCell.swift */,
+				1B5FFE502821EFA800EC5AD7 /* ShoppingMemo.swift */,
+				1B5FFE5628220B0500EC5AD7 /* ViewController.swift */,
+				1B5FFE58282211A900EC5AD7 /* Movie.storyboard */,
+				1B5FFE5C282216BA00EC5AD7 /* BoxOfficeCastViewController.swift */,
+				1B5FFE5A2822128000EC5AD7 /* BoxOfficeDetailViewController.swift */,
+				1B5FFE5428220ADB00EC5AD7 /* TestViewController.swift */,
 				1BD15891281FEB3400DD05CB /* Example2TableViewController.swift */,
 				1BD1588F281FC02400DD05CB /* MemoTableViewController.swift */,
+				1B5FFE4C2821438500EC5AD7 /* Memo.swift */,
 				1BD15882281FB97A00DD05CB /* Assets.xcassets */,
 				1BD15884281FB97A00DD05CB /* LaunchScreen.storyboard */,
 				1BD15887281FB97A00DD05CB /* Info.plist */,
+				1B5FFE4828213ECE00EC5AD7 /* Movie.swift */,
 			);
 			path = MyTable3Weeks;
 			sourceTree = "<group>";
@@ -137,6 +176,7 @@
 				1BD15886281FB97A00DD05CB /* LaunchScreen.storyboard in Resources */,
 				1BD15883281FB97A00DD05CB /* Assets.xcassets in Resources */,
 				1BD15881281FB97900DD05CB /* Main.storyboard in Resources */,
+				1B5FFE59282211A900EC5AD7 /* Movie.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,12 +187,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B5FFE4B28213F7F00EC5AD7 /* MovieInformation.swift in Sources */,
+				1B5FFE4F2821ECAC00EC5AD7 /* UIViewController+Extension.swift in Sources */,
 				1BD1587A281FB97900DD05CB /* AppDelegate.swift in Sources */,
+				1B5FFE512821EFA800EC5AD7 /* ShoppingMemo.swift in Sources */,
+				1B5FFE452820B8B400EC5AD7 /* ShoppingTableViewCell.swift in Sources */,
+				1B5FFE4D2821438500EC5AD7 /* Memo.swift in Sources */,
 				1B5FFE3D2820968000EC5AD7 /* BoxOfficeTableViewCell.swift in Sources */,
 				1BD1587C281FB97900DD05CB /* SceneDelegate.swift in Sources */,
+				1B5FFE4928213ECE00EC5AD7 /* Movie.swift in Sources */,
 				1BD15890281FC02400DD05CB /* MemoTableViewController.swift in Sources */,
+				1B5FFE5528220ADB00EC5AD7 /* TestViewController.swift in Sources */,
 				1BD15892281FEB3400DD05CB /* Example2TableViewController.swift in Sources */,
 				1B5FFE3F2820969400EC5AD7 /* BoxOfficeTableViewController.swift in Sources */,
+				1B5FFE5D282216BA00EC5AD7 /* BoxOfficeCastViewController.swift in Sources */,
+				1B5FFE472820C02200EC5AD7 /* PurchaseTableViewCell.swift in Sources */,
+				1B5FFE5B2822128000EC5AD7 /* BoxOfficeDetailViewController.swift in Sources */,
+				1B5FFE5728220B0500EC5AD7 /* ViewController.swift in Sources */,
+				1B5FFE432820B87900EC5AD7 /* ShoppingTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +355,7 @@
 				INFOPLIST_FILE = MyTable3Weeks/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Movie;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -330,7 +382,7 @@
 				INFOPLIST_FILE = MyTable3Weeks/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Movie;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
