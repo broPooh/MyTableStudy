@@ -9,6 +9,7 @@ import UIKit
 
 class MemoTableViewController: UITableViewController {
     
+    // [Memo(content: "안녕", category: .others), Memo(content: "안녕", category: .others)]
     var list: [Memo] = [] {
         didSet {
             //tableView.reloadData()
@@ -56,11 +57,14 @@ class MemoTableViewController: UITableViewController {
     func loadData() {
         let userDefaults = UserDefaults.standard
         
+        // [Memo(content: "안녕", category: .others), Memo(content: "안녕", category: .others)]
         if let data = userDefaults.object(forKey: "memoList") as? [[String:Any]] {
             
             var memo = [Memo]()
             
             for datum in data {
+                
+                // Memo(content: "안녕", category: .others)를 변환 => ["content": "안녕", "category": 2]
                 guard let category = datum["category"] as? Int else { return }
                 guard let content = datum["content"] as? String else { return }
                 
@@ -80,11 +84,13 @@ class MemoTableViewController: UITableViewController {
         var memo: [[String:Any]] = []
         
         for i in list {
+            // 딕셔너리를 요소로 가지고 있는 배열 -> 이 배열을 담을 수 있는 배열을 구성해서 유저디폴트에 저장
             let data: [String:Any] = [
                 "category": i.category.rawValue,
                 "content": i.content
             ]
             
+            // ["content": "안녕", "category": 2]
             memo.append(data)
         }
         
