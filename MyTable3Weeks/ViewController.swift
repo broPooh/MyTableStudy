@@ -48,6 +48,9 @@ class ViewController: UIViewController {
         //2. 스토리보드 내 많은 뷰 컨트롤러 중, 전환하고자 하는 뷰 컨트롤러 가져오기
         let vc = storyboard.instantiateViewController(withIdentifier: "BoxOfficeTableViewController") as! BoxOfficeTableViewController
         
+        //Pass Data3
+        vc.titleSpace = "박스오피스"
+        
         //3. Push : 스토리보드에서 네비게이션 컨트롤러가 임베드 되어있는지 확인하기.!
         // 메인에 네비게이션 컨트롤러가 없기 때문에 코드로 이동하라고 해도 절대 이동이 불가능핟.!
         // 스토리보드와 코드의 화면전환은 동일하게 연결되어야 한다.

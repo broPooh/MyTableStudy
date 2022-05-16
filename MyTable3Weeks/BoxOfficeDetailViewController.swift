@@ -9,6 +9,17 @@ import UIKit
 
 class BoxOfficeDetailViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     
+    
+    //Pass Data 1.
+    var movieTitle: String?
+    var releaseDate: String?
+    var runtime: Int?
+    var overview: String?
+    var rate: Double?
+    
+    var movieData: Movie?
+    
+    
     let pickerList: [String] = ["감자", "고구마", "파인애플", "자두", "감"]
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -34,6 +45,18 @@ class BoxOfficeDetailViewController: UIViewController, UITextViewDelegate, UIPic
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        guard let movie = movieData else {
+            return
+        }
+        
+        //Pass Data 2.
+        titleTextField.text = movieTitle
+        overViewTextVIew.text = overview
+        
+        print(runtime, rate, releaseDate)
+        print(movie)
 
         //TextField inputView
         let pickerView = UIPickerView()
@@ -45,7 +68,7 @@ class BoxOfficeDetailViewController: UIViewController, UITextViewDelegate, UIPic
         
         overViewTextVIew.delegate = self
         //텍스트뷰 플레이스홀더 : 글자 , 색상 설정
-        overViewTextVIew.text = "이 곳에 줄거리를 남겨보세요"
+        //overViewTextVIew.text = "이 곳에 줄거리를 남겨보세요"
         overViewTextVIew.textColor = .lightGray
     }
     
